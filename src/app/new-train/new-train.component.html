@@ -1,3 +1,177 @@
-<p>
-  new-train works!
-</p>
+<div class="row">
+  <div class="col-md-8 offset-2">
+
+
+
+    <form id="mt-form" class="form-horizontal" autocomplete="off">
+        <div id="status" class="alert hidden"></div>
+
+        <div id="pg-carousel" class="carousel slide" data-interval="false" data-keyboard="false">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" data-step="0">
+                    <div class="row">
+                        <div class="col-sm-offset-1 col-sm-9">
+                            <h3>This Meal Train is for:</h3>
+                        </div>
+                    </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*Name</label>
+                  <input #name class="form-control" maxlength="20" placeholder="FirstName LastName">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*Email</label>
+                  <input #email type="email" class="form-control" maxlength="20" placeholder="email@domain.com">
+                </div>
+
+                  <input #email>
+                  <input #address>
+                  <input #city>
+                  <input #state>
+                  <input #zip>
+                  <input #phone>
+                  <input #dates>
+                  <input #numAdults>
+                  <input #numChildren>
+                  <input #deliveryTimePreference>
+                  <input #specialInstructions>
+                  <input #favoriteMeals>
+                  <input #leastFavoriteMeals>
+                  <input #foodRestrictions>
+
+                    <div class="form-group">
+                        <label for="EventName" class="col-sm-2 control-label">* Name</label>
+                        <div class="col-sm-8">
+                            <input #trainName type="text" class="form-control" id="EventName" name="Mealtrain[Name]" placeholder="Recipient name" maxlength="100" autofocus required />
+                            <small>Example: The Smith Family</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventEmail" class="col-sm-2 control-label">* Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="EventEmail" name="Mealtrain[Email]" placeholder="Recipient email address" maxlength="100" required />
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <hr />
+                            <div class="alert alert-info"><small><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Enter the address where meals are to be dropped off.</small></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="EventAddr1" class="col-sm-2 control-label">Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="EventAddr1" name="Mealtrain[Address][Addr1]" maxlength="100" placeholder="Omit for more privacy" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <input type="text" class="form-control" id="EventAddr2" name="Mealtrain[Address][Addr2]" maxlength="100" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventCity" class="col-sm-2 control-label">* City</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="EventCity" name="Mealtrain[Address][City]" maxlength="100" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventState" class="col-sm-2 control-label">* State/Prov.</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="EventState" name="Mealtrain[Address][State]" maxlength="100" required />
+                        </div>
+                        <label for="EventZip" class="col-sm-2 control-label">* Postal Code</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="EventZip" name="Mealtrain[Address][Zip]" maxlength="20" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventPhone" class="col-sm-2 control-label">Phone</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="EventPhone" name="Mealtrain[Address][Phone]" maxlength="50" placeholder="Optional" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-step="2">
+                    <div class="form-group">
+                        <label for="EventNumAdults" class="col-sm-2 control-label"># adults to cook for</label>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="EventNumAdults" name="Mealtrain[NumAdults]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventNumKids" class="col-sm-2 control-label"># kids to cook for</label>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="EventNumKids" name="Mealtrain[NumKids]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventTime" class="col-sm-2 control-label">Preferred delivery time</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="EventTime" name="Mealtrain[DeliveryTime]" maxlength="100" />
+                            <small>Example: from 5PM - 6PM</small>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <label for="ThemeId" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-8">
+                            <label><input id="ThemeId" name="Mealtrain[ThemeId]" type="checkbox" value="1" /> Is this Meal Train in support of someone living with breast cancer? <a id="btnMagnoliaHelp" href="#" title="Why we ask"><i class="fa fa-info-circle"></i></a></label>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <div class="alert alert-info"><small><i class="fa fa-comment-o"></i>&nbsp;&nbsp;Add special instructions, dietary preferences, or anything else you think the event participants may need to know.</small></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="EventInstructions" class="col-sm-2 control-label">Special instructions</label>
+                        <div class="col-sm-8">
+                            <textarea id="EventInstructions" class="form-control" name="Mealtrain[Instructions]" rows="5"></textarea>
+                            <small>List any dropoff, delivery, driving, or other instructions</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventLikes" class="col-sm-2 control-label">Favorite meals</label>
+                        <div class="col-sm-8">
+                            <textarea id="EventLikes" class="form-control" name="Mealtrain[Likes]" rows="5"></textarea>
+                            <small>Examples: lasagna, chili, etc</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventDislikes" class="col-sm-2 control-label">Least Favorite meals</label>
+                        <div class="col-sm-8">
+                            <textarea id="EventDislikes" class="form-control" name="Mealtrain[Dislikes]" rows="5"></textarea>
+                            <small>Example: anchovies, broccoli, etc</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EventRestrictions" class="col-sm-2 control-label">Allergies or dietary restrictions</label>
+                        <div class="col-sm-8">
+                            <textarea id="EventRestrictions" class="form-control" name="Mealtrain[Restrictions]" rows="5"></textarea>
+                            <small>Example: allergic to shellfish, vegan, gluten-free, etc</small>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <div id="slide-buttons" class="init">
+                            <button (click)="addTrain(name.value, email.value)" class="btn btn-lg btn-primary btn-responsive-block" data-loading-text="Saving...">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+  </div>
+</div>

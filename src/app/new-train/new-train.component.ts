@@ -12,4 +12,8 @@ export class NewTrainComponent implements OnInit {
   ngOnInit() {
   }
 
+  addTrain(name: string, email: string) {
+    console.log("Your name is " + name + " and your email is " + email);
+  }
+
 }
