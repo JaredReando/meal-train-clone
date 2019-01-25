@@ -17,42 +17,71 @@
 
                 <div class="form-group">
                   <label class="col-sm-2">*Name</label>
-                  <input #name class="form-control" maxlength="20" placeholder="FirstName LastName">
+                  <input #newName class="form-control" maxlength="20" placeholder="FirstName LastName">
                 </div>
 
                 <div class="form-group">
                   <label class="col-sm-2">*Email</label>
-                  <input #email type="email" class="form-control" maxlength="20" placeholder="email@domain.com">
+                  <input #newEmail class="form-control" maxlength="20" placeholder="email@domain.com">
                 </div>
 
-                  <input #email>
-                  <input #address>
-                  <input #city>
-                  <input #state>
-                  <input #zip>
-                  <input #phone>
-                  <input #dates>
-                  <input #numAdults>
-                  <input #numChildren>
-                  <input #deliveryTimePreference>
-                  <input #specialInstructions>
-                  <input #favoriteMeals>
-                  <input #leastFavoriteMeals>
-                  <input #foodRestrictions>
+                <div class="form-group">
+                  <label class="col-sm-2">*Address</label>
+                  <input #newAddress class="form-control" maxlength="20" placeholder="1234 Main Street">
+                </div>
 
-                    <div class="form-group">
-                        <label for="EventName" class="col-sm-2 control-label">* Name</label>
-                        <div class="col-sm-8">
-                            <input #trainName type="text" class="form-control" id="EventName" name="Mealtrain[Name]" placeholder="Recipient name" maxlength="100" autofocus required />
-                            <small>Example: The Smith Family</small>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="EventEmail" class="col-sm-2 control-label">* Email</label>
-                        <div class="col-sm-8">
-                            <input type="email" class="form-control" id="EventEmail" name="Mealtrain[Email]" placeholder="Recipient email address" maxlength="100" required />
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <label class="col-sm-2">*City</label>
+                  <input #newState class="form-control" maxlength="20" placeholder="City">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*State</label>
+                  <input #newState class="form-control" maxlength="20" placeholder="XX">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*Phone</label>
+                  <input #newPhone class="form-control" maxlength="20" placeholder="555-123-4567">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*Date</label>
+                  <input #newDate class="form-control" maxlength="20" placeholder="7-29-2019">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2">*Number of People</label>
+                  <input #newGroupSize type="number" class="form-control" maxlength="20" placeholder="2">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-4">*Delivery Time Preference</label>
+                  <input #newDeliveryTimePreference class="form-control" placeholder="Between 4pm and 7pm">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-4">*Special Instructions</label>
+                  <textarea #newSpecialInstructions rows="4" class="form-control" placeholder="Leave on front porch if not home."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-4">*Favorite Meals</label>
+                  <textarea #newFavoriteMeals rows="4" class="form-control" placeholder="Spaghetti, sushi, eggs on top of other eggs."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-4">*Least Favorite Meals</label>
+                  <textarea #newLeastFavoriteMeals rows="4" class="form-control" placeholder="Old spaghetti, eggs by themselves."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-4">*Food Restrictions</label>
+                  <textarea #newFoodRestrictions rows="4" class="form-control" placeholder="No shellfish, wheat, dairy, etc.."></textarea>
+                </div>
+
+
+                <ngb-datepicker #d></ngb-datepicker>
 
 
                     <div class="row">
@@ -164,7 +193,7 @@
                 <div class="row">
                     <div class="col-xs-12 text-right">
                         <div id="slide-buttons" class="init">
-                            <button (click)="addTrain(name.value, email.value)" class="btn btn-lg btn-primary btn-responsive-block" data-loading-text="Saving...">Submit</button>
+                            <button (click)="addTrain(name.value, swoosh.value)" class="btn btn-lg btn-primary btn-responsive-block" data-loading-text="Saving...">Submit</button>
 
                         </div>
                     </div>

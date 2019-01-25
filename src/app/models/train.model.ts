@@ -1,4 +1,4 @@
-export class Event {
+export class Train {
   public dateCreated = new Date();
 
   constructor(
@@ -10,8 +10,7 @@ export class Event {
     public zip: string,
     public phone: string,
     public dates: any[],
-    public numAdults: string,
-    public numChildren: string,
+    public groupSize: string,
     public deliveryTimePreference: string,
     public specialInstructions: string,
     public favoriteMeals: string,
