@@ -1,4 +1,12 @@
+
 <router-outlet></router-outlet>
 <app-nav-header></app-nav-header>
+<h1>{{title}}</h1>
+<div *ngIf="allEvents.length > 0">
+  <ul>
+    <li *ngFor="let event of allEvents">Name: {{event.name}}, Dates: {{event.dates}}</li>
+  </ul>
+
+</div>
 <app-nav-body></app-nav-body>
 <app-nav-footer></app-nav-footer>
