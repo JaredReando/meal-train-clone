@@ -1,27 +1,51 @@
-# MealTrain
+# Meal Train Clone
+
+#### January 25, 2019
+
+### _Jared Reando_
+
+## Description
 
 This project is a case study in Angular which aims to clone the popular meal giving site Meal Train. It is a work in progress and meant only for educational purposes.
 
-## Setup
+## Setup and Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone the project from https://github.com/jaredreando/meal-train-clone.git to a local directory
 
-## Code scaffolding
+2. Install project dependencies:
+```console
+npm install
+```
+3. Build and launch project into web browser:
+```console
+ng serve --open
+```
+## Further Development
+- [ ] Complete new meal train entry form
+- [ ] Add email confirmation of meal train signup
+- [ ] Add user login
+- [ ] Add user dashboard to view meal train history
+- [ ] Add routing to multiple pages
+- [ ] Clean up formatting
+- [ ] Make it all look pretty
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Support and Contact Details
 
-## Build
+For questions or feedback, email me at jaredreando@gmail.com
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies used
 
-## Running unit tests
+- JavaScript
+- Angular
+- Webpack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Legal
+MIT License
 
-## Running end-to-end tests
+Copyright 2019 Jared Reando
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Further help
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
