@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbDate, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-new-train',
@@ -8,46 +7,16 @@ import {NgbDate, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 })
 export class NewTrainComponent implements OnInit {
 
-
+  constructor() {}
 
   ngOnInit() {
   }
 
-  addTrain(name: string, email: string) {
-    console.log("Your name is " + name + " and your email is " + email);
-  }
+  addTrain(name: string, email: string, address: string, city: string, state: string, zip: string, phone: string, dates: string, groupSize: string, deliveryTimePreferences: string, specialInstructions: string, favoriteMeals: string, leastFavoriteMeals: string, foodRestrictions: string) {
+    debugger;
+    let array: string[] = [name, email, address, city, state, zip, phone, dates, groupSize, deliveryTimePreferences, specialInstructions, favoriteMeals, leastFavoriteMeals, foodRestrictions];
 
-  hoveredDate: NgbDate;
-
-fromDate: NgbDate;
-toDate: NgbDate;
-
-  constructor(calendar: NgbCalendar) {
-    this.fromDate = calendar.getToday();
-    this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
-  }
-
-  onDateSelection(date: NgbDate) {
-    if (!this.fromDate && !this.toDate) {
-      this.fromDate = date;
-    } else if (this.fromDate && !this.toDate && date.after(this.fromDate)) {
-      this.toDate = date;
-    } else {
-      this.toDate = null;
-      this.fromDate = date;
-    }
-  }
-
-  isHovered(date: NgbDate) {
-    return this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate);
-  }
-
-  isInside(date: NgbDate) {
-    return date.after(this.fromDate) && date.before(this.toDate);
-  }
-
-  isRange(date: NgbDate) {
-    return date.equals(this.fromDate) || date.equals(this.toDate) || this.isInside(date) || this.isHovered(date);
+    console.log(array);
   }
 
 
