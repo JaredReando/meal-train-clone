@@ -9,7 +9,7 @@ export class Train {
     public state: string,
     public zip: string,
     public phone: string,
-    public dates: any[],
+    public dates: string,
     public groupSize: string,
     public deliveryTimePreference: string,
     public specialInstructions: string,
