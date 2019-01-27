@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Meal Train</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -26,14 +26,11 @@
       <button type="link" class="btn btn-success" name="button">Log In</button>
     </ul>
   </div>
-</nav>
+</nav> -->
 
-
-
-
-
-
-<div class="container-fluid">
-    <h1>Get started</h1>
-            <p class="text-center"><strong>Tip: Do you organize events for your group or community?  Learn about the benefits of <a href="/learn/pro/">Meal Train Pro</a></strong></p>
+<div class="mtn-header">
+    <img src="assets/img/mealtrain_logo.png">
+  <ul>
+    <li *ngFor="let item of navItems">{{ item }}</li>
+  </ul>
 </div>

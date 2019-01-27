@@ -9,6 +9,7 @@ import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import { NavBodyComponent } from './nav-body/nav-body.component';
 import { NewTrainComponent } from './new-train/new-train.component';
+import { ListTrainsComponent } from './list-trains/list-trains.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewTrainComponent } from './new-train/new-train.component';
     NavHeaderComponent,
     NavFooterComponent,
     NavBodyComponent,
-    NewTrainComponent
+    NewTrainComponent,
+    ListTrainsComponent
   ],
   imports: [
     NgbModule,

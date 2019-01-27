@@ -12,4 +12,7 @@ export class NavHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  navItems: string[] = ['Learn the basics', 'Get started', 'Help', 'Sign Up', 'Sign In'];
+
+
 }
