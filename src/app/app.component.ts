@@ -7,7 +7,7 @@ import { Train } from './models/train.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'meal-train';
+  title = 'Meal Train Welcome';
 
 
   allTrains: Train[] = [

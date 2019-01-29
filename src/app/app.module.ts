@@ -10,6 +10,13 @@ import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import { NavBodyComponent } from './nav-body/nav-body.component';
 import { NewTrainComponent } from './new-train/new-train.component';
 import { ListTrainsComponent } from './list-trains/list-trains.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { routing } from './app.routing';
+import { LearnTheBasicsComponent } from './learn-the-basics/learn-the-basics.component';
+import { GetStartedComponent } from './get-started/get-started.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +25,20 @@ import { ListTrainsComponent } from './list-trains/list-trains.component';
     NavFooterComponent,
     NavBodyComponent,
     NewTrainComponent,
-    ListTrainsComponent
+    ListTrainsComponent,
+    WelcomeComponent,
+    LearnTheBasicsComponent,
+    GetStartedComponent,
+    SignUpComponent,
+    SignInComponent,
+    HelpComponent
   ],
   imports: [
     NgbModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
