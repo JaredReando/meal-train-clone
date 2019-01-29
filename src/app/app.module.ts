@@ -10,13 +10,14 @@ import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import { NavBodyComponent } from './nav-body/nav-body.component';
 import { NewTrainComponent } from './new-train/new-train.component';
 import { ListTrainsComponent } from './list-trains/list-trains.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { routing } from './app.routing';
-import { LearnTheBasicsComponent } from './learn-the-basics/learn-the-basics.component';
-import { GetStartedComponent } from './get-started/get-started.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { HelpComponent } from './help/help.component';
+import { LearnTheBasicsComponent } from './pages/learn-the-basics/learn-the-basics.component';
+import { GetStartedComponent } from './pages/get-started/get-started.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { HelpComponent } from './pages/help/help.component';
+import { TrainDetailComponent } from './train-detail/train-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HelpComponent } from './help/help.component';
     GetStartedComponent,
     SignUpComponent,
     SignInComponent,
-    HelpComponent
+    HelpComponent,
+    TrainDetailComponent
   ],
   imports: [
     NgbModule,

@@ -1,0 +1,4 @@
+<h1>Here are all of your meal trains:</h1>
+<ul>
+  <li *ngFor="let train of allTrains" (click)="goToDetailPage(train)">{{train.name}}</li>
+</ul>
