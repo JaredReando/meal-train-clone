@@ -19,6 +19,17 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { HelpComponent } from './pages/help/help.component';
 import { TrainDetailComponent } from './train-detail/train-detail.component';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +51,9 @@ import { TrainDetailComponent } from './train-detail/train-detail.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
