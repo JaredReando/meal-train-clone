@@ -6,6 +6,7 @@ import { Train } from './models/train.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Meal Train Welcome';
 
