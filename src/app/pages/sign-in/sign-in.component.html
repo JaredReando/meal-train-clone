@@ -1,4 +1,43 @@
-<h1>Here are all of your meal trains:</h1>
+<div class="container-flud">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>My Dashboard</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="alert alert-info">
+            These are all of the meal trains your are a part of.
+          </div>
+          <div class="pg-entitylist-row">
+            <div class="col-sm-2 col-xs-3 text-center">
+              <img src="https://www.mealtrain.com/content/img/app/tokens/appointments-sm.png" alt="appointment">
+            </div>
+            <div class="col-sm-5 col-xs-9 pg-col-name">
+              <strong>Meal train for:</strong>
+              <a routerLink="#">Person's Name</a>
+
+            </div>
+            <div class="col-sm-5 col-sm-offset-0 col-xs-offset-3 col-xs-9">
+              <a title="Open" class="btn btn-primary" href="/trains/zv8836"><i class="fa fa-search"></i>&nbsp;Open</a>&nbsp;
+              <a title="Remove Me" class="btn btn-default btn-remove-train" data-id="zv8836"><i class="fa fa-trash"></i><span class="">&nbsp;Remove <span class="hidden-xs">Me</span></span></a>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 <ul>
   <li *ngFor="let train of allTrains | async" (click)="goToDetailPage(train)">{{train.name}}</li>
 </ul>
