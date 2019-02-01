@@ -21,8 +21,7 @@ export class TrainService {
     this.allTrains.push(newTrain);
   }
 
-  getTrainById(trainId){
+  getTrainById(trainId: string){
     return this.database.object('trains/' + trainId);
-    debugger;
   }
 }
