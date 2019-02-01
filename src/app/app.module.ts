@@ -23,6 +23,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { CreateEventComponent } from './pages/create-event/create-event.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { EditTrainComponent } from './edit-train/edit-train.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -45,7 +46,8 @@ export const firebaseConfig = {
     HelpComponent,
     TrainDetailComponent,
     CreateEventComponent,
-    DashboardComponent
+    DashboardComponent,
+    EditTrainComponent
   ],
   imports: [
     NgbModule,
