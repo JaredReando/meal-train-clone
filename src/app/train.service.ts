@@ -18,6 +18,10 @@ export class TrainService {
     return this.allTrains;
   }
 
+  addTrain(newTrain: Train) {
+    this.allTrains.push(newTrain);
+  }
+
   getTrainById(trainId: any){
     // for (let i = 0; i < allTrains.length; i++) {
     //   if(allTrains[i].name === trainId) {
