@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Train } from './models/train.model';
-import { allTrains } from './mock-trains'
 
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
@@ -22,11 +21,8 @@ export class TrainService {
     this.allTrains.push(newTrain);
   }
 
-  getTrainById(trainId: any){
-    // for (let i = 0; i < allTrains.length; i++) {
-    //   if(allTrains[i].name === trainId) {
-    //     return allTrains[i];
-    //   }
-    // }
+  getTrainById(trainId){
+    return this.database.object('trains/' + trainId);
+    debugger;
   }
 }

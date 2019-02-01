@@ -7,6 +7,7 @@ import { HelpComponent } from './pages/help/help.component';
 import { CreateEventComponent } from './pages/create-event/create-event.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TrainDetailComponent } from './train-detail/train-detail.component';
+import { EditTrainComponent } from './edit-train/edit-train.component';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ const appRoutes: Routes = [
   {
     path: 'trains/:id',
     component: TrainDetailComponent
+  },
+  {
+    path: 'trains/:id/edit',
+    component: EditTrainComponent
   }
 ];
 
