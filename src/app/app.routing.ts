@@ -4,8 +4,8 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LearnTheBasicsComponent } from './pages/learn-the-basics/learn-the-basics.component';
 import { GetStartedComponent } from './pages/get-started/get-started.component';
 import { HelpComponent } from './pages/help/help.component';
-import { SignUpComponent } from './pages/sign-up/sign-up.component';
-import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { CreateEventComponent } from './pages/create-event/create-event.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TrainDetailComponent } from './train-detail/train-detail.component';
 
 const appRoutes: Routes = [
@@ -26,12 +26,12 @@ const appRoutes: Routes = [
     component: HelpComponent
   },
   {
-    path: 'sign-in',
-    component: SignInComponent
+    path: 'create-event',
+    component: CreateEventComponent
   },
   {
-    path: 'sign-up',
-    component: SignUpComponent
+    path: 'dashboard',
+    component: DashboardComponent
   },
   {
     path: 'trains/:id',
