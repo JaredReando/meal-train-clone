@@ -24,7 +24,7 @@ export class TrainDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.trainId = urlParameters['id'];
     });
-    this.trainToDisplay = this.trainService.getTrainById(this.trainId);
+    // this.trainToDisplay = this.trainService.getTrainById(this.trainId);
   }
 
 }
