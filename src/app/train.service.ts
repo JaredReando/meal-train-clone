@@ -22,6 +22,7 @@ export class TrainService {
   }
 
   getTrainById(trainId: string){
+
     return this.database.object('trains/' + trainId);
   }
 }

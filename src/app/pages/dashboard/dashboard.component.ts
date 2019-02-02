@@ -23,4 +23,8 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['trains/', clickedTrain.$key])
   }
 
+  goToEditPage(clickedTrain) {
+    this.router.navigate(['trains/', clickedTrain.$key, 'edit'])
+  }
+
 }
