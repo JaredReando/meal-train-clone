@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
+.container-fluid {
+  max-width: 1200px;
+}
+
 #header-logo {
   position: absolute;
   top: 30px;
