@@ -8,6 +8,12 @@
 
 This project is a case study in Angular which aims to clone the popular meal giving site Meal Train. It is a work in progress and meant only for educational purposes.
 
+My primary focus for the project was replicating the basic functionality of the Meal Train service. Namely, the ability for a user to create a new event and review details of existing events from an overview dashboard:
+
+The original site has a few features I wasn't able to figure out just yet. Specifically, the multiple date selection interface proved challenging
+
+View the hosted site [HERE](https://meal-train-clone.firebaseapp.com/)
+
 ## Setup and Installation
 
 1. Clone the project from https://github.com/jaredreando/meal-train-clone.git to a local directory
