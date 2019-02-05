@@ -1,9 +1,10 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid red;
+  border-bottom: 1px solid grey;
   background: white;
   z-index: 1;
+  padding-top: 10px;
   height: 70px;
   position: fixed;
   width: 100%;
@@ -18,28 +19,23 @@
   justify-content: flex-end;
   font-family: 'Open Sans', Arial, sans-serif;
   height: auto;
-  border: 1px solid black;
-
 }
 
 #logo {
-  align-self: flex-start;
+  flex-grow: 4;
   height: auto;
 }
 
 .flex-nav a {
   color: #337ab7;
-  /* text-decoration: none; */
   padding: 10px 10px;
   height: auto;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-
-  border: 1px solid black;
 }
 
 .flex-nav a:hover {
